@@ -1,0 +1,123 @@
+\documentclass[60pt]{article}
+\usepackage{babel}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+
+\title{\textbf{Universidad Veracruzana}}
+\date{\textbf{Facultad de Negocios y Tecnologías}}
+
+
+\begin{document}
+
+\maketitle
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\linewidth]{logo1.png}
+\end{figure}
+
+\maketitle
+\textsf{\Large 
+\\
+\\
+\textbf{EXPERIENCIA EDUCATIVA:} Bases De Datos No Convencional. \\}
+\\
+\\ 
+\maketitle
+\textsf{\Large \textbf{ACADÉMICO:} Centeno Tellez Adolfo. \\}
+\\
+\\
+\maketitle
+\textsf{\Large \textbf{TEMA:} Proyecto Blog. \\}
+\\
+\\
+\maketitle
+\textsf{\Large \textbf{ESTUDIANTE:} Basilio Hernandez Jahaziel. \\}
+\\
+\\ 
+\maketitle
+\textsf{\Large \textbf{GRUPO:} 601 - Ingeniería de Software \\}
+\\
+\\
+\maketitle
+\textsf{\Large \textbf{ENTREGA:} 06 de Abril del 2021 \\}
+
+\newpage
+
+\section{Introducción}
+\subsection{Contexto del proyecto}
+En este apartado voy a realizar una breve introducción del contexto del proyecto. En cuanto al proyecto, destacare la necesidad y utilidad de una base de datos NoSQL,
+así como mis objetivos en el.
+\subsection{Necesidad y Utilidad de una Base de datos NoSQL}
+En cuanto a dos aspectos importantes como lo es el aumento en el tamaño
+de los archivos y en su cantidad, ha causado que
+se haga uso de esta tecnología NoSQL;
+además, hay que tener en cuenta que las bases de
+datos relacionales (soluciones actuales) presentan
+serios problemas en cuanto a escalabilidad en el
+manejo de la información se refiere, lo que genera
+que a medida que aumentan los datos, el desempeño
+disminuye y se hacen menos intuitivas (las consultas
+son cada vez más largas y complejas).
+\\
+\\
+En el campo de los datos, leer datos es costoso dado que en el modelo relacional los datos se representan mediante conjuntos (tablas) relacionados entre sí. Es así que realizar una consulta por lo general involucra unir estos conjuntos (operación join) lo cual es costoso en términos de recursos de cómputo, por lo cual en el uso de una base de datos NoSQL No se necesitan servidores con gran cantidad de recursos para operar. La adaptabilidad y flexibilidad permiten empezar con bajos niveles de inversión en equipos e ir ampliando la capacidad a medida de las necesidades.
+\\
+\\
+Actualmente es un hecho que para los usuarios finales
+una demora en segundos en una consulta a una página
+Web se vuelve inaceptable por que las
+aplicaciones modernas, especialmente aplicaciones
+Web que tienen muchos usuarios al mismo tiempo que
+exigen respuestas razonablemente ágiles lo cual nace la necesidad de implementar los sistemas NoSQL que tienen un algoritmo interno para reescribir las consultas escritas por los usuarios o las aplicaciones programadas, esto con el fin de no sobrecargar el rendimiento de los servidores y mantener un nivel óptimo en las operaciones.
+\\
+\subsection{Objetivos del proyecto}
+El presente documento se ha realizado persiguiendo una serie de objetivos:
+\begin{itemize}
+    \item Desarrollo de un back-end Web, que contenga la funcionalidad de crear un Articulo o un Post y una funcionalidad para Poder Ver su contenido.
+    \item Diseñar un estilo simple para las interfaces de la pagina web.
+    \item Implementación de Login y Logout a través de facebook.
+    \item Implementación de Tecnología NoSQL.
+\end{itemize}
+
+\section{Descripción del proyecto}
+\textsf{\textbf{A)}} El desarrollo consiste en el desarrollo de una aplicación Web con las tecnologías y herramientas mencionadas en la sección \textsf{\textbf{2.1}} donde solo el usuario logueado a través de una cuenta de red social como lo es Facebook o por Google y que sea de tipo administrator podrá tener acceso de poder crear y subir un Nuevo articulo o Post a la base de datos Firestore, este articulo esta conformado por un Titulo, Un editor donde puede escribir el contenido del articulo también con un apartado de configuración de articulo donde pude seleccionar si esta en estado publicado y otra opción de subir una imagen como encabezado del articulo a trave de Firestorage.
+\\
+\\
+\textsf{\textbf{B)}} Desarrollo de una Aplicaion express para asignar custom claim a los usuarios autentificados en firebase y poder implementar un chequeo de Rol en al login.
+\\
+\\
+\textsf{\textbf{C)}} Para la ejecución correcta primero tendrá que clonar el repositorio instale las dependencias con yarn install o npm install y inicie con yarn start o npm start entre a la pestaña nuevo articulo pero no podrá crear uno por que necesita el logueo una vez que se logue tendre que asignarle el rol administrator para que pueda tener disponible esa pestaña de crear articulo y pueda crear y guardarse el articulo a la base de datos.
+\\
+\textsf{\textbf{Nota:}} Una vez llenado todos los campos en el articulo solo de clic una vez en el botón \textsf{\textbf{Enviar}} ya que me falto implementar la parte donde notifica
+\\
+\subsection{Tecnologıas y herramientas usadas en el proyecto}
+Normalmente, cuando desarrollamos un proyecto, utilizamos
+gran cantidad de tecnologıas y herramienta que nos facilitan el trabajo. Actualmente, existen
+gran cantidad de frameworks o bibliotecas para Javascript que nos ayudan a crear interfaces web
+de una manera menos tediosa, los cuales es aconsejable utilizar. También es muy recomendable
+utilizar un IDE o un editor de código fuente, los cuales optimizan el desarrollo de software
+gracias a sus editores de código fuente, herramientas de construcción automáticas y técnicas de
+depuración. Como veremos a continuación.
+\subsection{React}
+React (también llamada React.js o ReactJS) es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página. Es mantenido por Facebook y la comunidad de software libre.
+\subsection{Firestore Database}
+Es una base de datos NoSQL flexible, escalable y en la nube a fin de almacenar y sincronizar datos para el desarrollo tanto del lado del cliente como del servidor.
+\subsection{Storage}
+Cloud Storage para Firebase se creó para los desarrolladores de apps que necesitan almacenar y entregar contenido generado por usuarios, como fotos o videos.
+\subsection{Authentication}
+Firebase Authentication proporciona servicios de backend, SDK fáciles de usar y bibliotecas de IU ya elaboradas para autenticar a los usuarios en tu app. Admite la autenticación mediante contraseñas, números de teléfono, proveedores de identidad federada populares, como Google, Facebook y Twitter, y mucho más.
+\subsection{Bootstrap}
+Bootstrap es una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como extensiones de JavaScript adicionales. A diferencia de muchos frameworks web, solo se ocupa del desarrollo front-end.
+\subsection{Visual Studio Code}
+Visual Studio Code es un editor de código fuente desarrollado por Microsoft para Windows, Linux y macOS. Incluye soporte para la depuración, control integrado de Git, resaltado de sintaxis, finalización inteligente de código, fragmentos y refactorización de código. También es personalizable, por lo que los usuarios pueden cambiar el tema del editor, los atajos de teclado y las preferencias. Es gratuito y de código abierto.
+\subsection{Consola de Chrome}
+Los desarrolladores web a menudo registran mensajes en la consola para asegurarse de que su JavaScript funciona según lo esperado.
+\section{Conclusión}
+Considero que el proyecto aun le falta refinar algunos puntos para el usuario final se sienta mas seguro en la ejecución de cada una de sus acciones a través de un control de notificaciones y mejorar un poco mas la apariencia en cuanto a presentación pero se pudo integrar los objetivos definidos como lo es el login el poder subir una imagen y el poder mostrar los elementos en esta ocasión los artículos o post.
+\end{document}
+
