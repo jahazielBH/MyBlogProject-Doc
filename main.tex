@@ -88,12 +88,12 @@ El presente documento se ha realizado persiguiendo una serie de objetivos:
 \textsf{\textbf{A)}} El desarrollo consiste en el desarrollo de una aplicación Web con las tecnologías y herramientas mencionadas en la sección \textsf{\textbf{2.1}} donde solo el usuario logueado a través de una cuenta de red social como lo es Facebook o por Google y que sea de tipo administrator podrá tener acceso de poder crear y subir un Nuevo articulo o Post a la base de datos Firestore, este articulo esta conformado por un Titulo, Un editor donde puede escribir el contenido del articulo también con un apartado de configuración de articulo donde pude seleccionar si esta en estado publicado y otra opción de subir una imagen como encabezado del articulo a trave de Firestorage.
 \\
 \\
-\textsf{\textbf{B)}} Desarrollo de una Aplicaion express para asignar custom claim a los usuarios autentificados en firebase y poder implementar un chequeo de Rol en al login.
+\textsf{\textbf{B)}} Desarrollo de una Aplicaion express para configurar atributos personalizados en las cuentas de usuario a los usuarios autentificados en firebase y poder implementar un control de acceso por medio de Role o Type en al login.
 \\
 \\
-\textsf{\textbf{C)}} Para la ejecución correcta primero tendrá que clonar el repositorio instale las dependencias con yarn install o npm install y inicie con yarn start o npm start entre a la pestaña nuevo articulo pero no podrá crear uno por que necesita el logueo una vez que se logue tendre que asignarle el rol administrator para que pueda tener disponible esa pestaña de crear articulo y pueda crear y guardarse el articulo a la base de datos.
+\textsf{\textbf{C)}} Para la ejecución correcta primero tendrá que clonar el repositorio instale las dependencias con yarn install o npm install y inicie con yarn start o npm start entre a la pestaña nuevo articulo pero no podrá crear uno por que necesita el logueo una vez que se logue tendre que asignarle el rol administrator al uid para que pueda tener disponible esa pestaña de crear articulo y pueda crear y guardar el articulo en la base de datos.
 \\
-\textsf{\textbf{Nota:}} Una vez llenado todos los campos en el articulo solo de clic una vez en el botón \textsf{\textbf{Enviar}} ya que me falto implementar la parte donde notifica
+\textsf{\textbf{Nota:}} Una vez llenado todos los campos en el articulo solo de clic una vez en el botón \textsf{\textbf{Enviar}} Espere hasta que le aparecerá una notificación donde dice que el Articulo ya ha sido Guardado
 \\
 \subsection{Tecnologıas y herramientas usadas en el proyecto}
 Normalmente, cuando desarrollamos un proyecto, utilizamos
@@ -118,6 +118,5 @@ Visual Studio Code es un editor de código fuente desarrollado por Microsoft par
 \subsection{Consola de Chrome}
 Los desarrolladores web a menudo registran mensajes en la consola para asegurarse de que su JavaScript funciona según lo esperado.
 \section{Conclusión}
-Considero que el proyecto aun le falta refinar algunos puntos para el usuario final se sienta mas seguro en la ejecución de cada una de sus acciones a través de un control de notificaciones y mejorar un poco mas la apariencia en cuanto a presentación pero se pudo integrar los objetivos definidos como lo es el login el poder subir una imagen y el poder mostrar los elementos en esta ocasión los artículos o post.
+Considero que el proyecto aun le falta refinar algunos puntos para el usuario final se sienta mas seguro en la ejecución de cada una de sus acciones a través de un control de notificaciones y mejorar un poco mas la apariencia en cuanto a presentación, pero al final de todo se llevo acabo con la ejecución de todos los objetivos definidos como lo es el login el poder subir una imagen y el poder mostrar los elementos en esta ocasión los artículos o post.
 \end{document}
-
